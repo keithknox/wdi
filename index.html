@@ -7,7 +7,7 @@
 	<style>
 		body {
 			width: 90%;
-			height: 750px;
+			height: auto;
 			background-image: url("background.gif");
 			background-size: cover;
 			background-position: center;
@@ -25,20 +25,20 @@
 			}
 
 
-		.photo {
+		#photo {
 			width: 50%;
 			position: relative;
 			float: left;
 			height: 400px;
 			}
 		
-		.photo img {
+		#photo img {
 			border-radius: 20px;
-			margin: 5% 0 0 40%;			
+			margin: 5% 0 0 40%;
 			}
 
 
-		.text {
+		#text {
 			width: 50%;
 			position: relative;
 			float: left;
@@ -53,15 +53,46 @@
 			text-align: center;
 			}
 			
-		.contacts {
+		#contacts {
 				margin: 0 auto;
 				padding-left: 40%;				
 				}
 		
-		.contacts li {
+		#contacts li {
 				display: inline;
 				list-style: none;
 				}
+				
+				
+		@media only screen and (max-width: 480px) {
+				
+				h1 {
+					font-size: 2em;
+					}
+					
+				#photo{	
+					height: auto;
+						}
+						
+				
+				p	{
+					font-size: 1em;
+					text-align: center;
+					margin: none;
+					}
+					
+				h2 {
+					font-size: 1em;
+					}
+					
+				#text {
+					float: none;
+					width: none;
+						}
+				
+				#contacts {
+					padding-left: none;
+						}
 				
 	</style>
 
@@ -70,18 +101,18 @@
 
 		<h1>Keith Knox</h1>
 		
-		<div class="photo">
-			<img src="keith.jpg">
+		<div id="photo">
+			<img src="keith.jpg" style="max-width:100%;">
 		</div>
 		
-		<div class="text">
+		<div id="text">
 			<p>Hi! I'm Keith, a Payroll Accountant living in Alexandria, VA. I became interested in web design and development because I am looking to change careers and I really enjoy doing online tutorials. Tutorials are great and all, but they only can take you so far. It's time to take the next step!</p>
 		</div>
 
 		
 		<h2> You can contact me here:</h2>
 		
-		<div class="contacts">
+		<div id="contacts">
 			<ul>
 				<li><a href="mailto:keithwknox@gmail.com"><img src="gmail.png"></a></li>
 				<li><a href="https://www.linkedin.com/pub/keith-knox/29/37/b61"><img src="linkedin.png"></a></li>
